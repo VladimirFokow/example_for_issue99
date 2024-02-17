@@ -1,0 +1,25 @@
+site_name: Docs
+
+# This method produces the unnecessary "topicA" folder:
+nav:
+  - TOPIC A: 
+    - ... | topicA/**
+  - ...
+
+# # This method flattens all sub-folders:
+# nav:
+#   - TOPIC A: 
+#     - ... | flat | topicA/**
+#   - ...
+
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+plugins:
+  - search
+  - awesome-pages
+
