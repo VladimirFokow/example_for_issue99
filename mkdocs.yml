@@ -1,12 +1,16 @@
 site_name: Docs
 
-# This method produces the unnecessary "topicA" folder:
+# 0. Topic A isn't first in order. But it has all the desired sub-structure.
 nav:
-  - TOPIC A: 
-    - ... | topicA/**
   - ...
 
-# # This method flattens all sub-folders:
+# # 1. This method produces the unnecessary "topicA" folder:
+# nav:
+#   - TOPIC A: 
+#     - ... | topicA/**
+#   - ...
+
+# # 2. This method flattens all sub-folders:
 # nav:
 #   - TOPIC A: 
 #     - ... | flat | topicA/**
