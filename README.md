@@ -1,4 +1,4 @@
-This is a repo that demonstrates the issue: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/99
+This repo demonstrates the issue: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/99
 
 ## How to reproduce
 
