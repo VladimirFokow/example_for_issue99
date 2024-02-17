@@ -1,8 +1,8 @@
 site_name: Docs
 
-# 0. Topic A isn't first in order. But it has all the desired sub-structure.
-nav:
-  - ...
+# # 0. (the default) Topic A isn't first in order. But it has all the desired sub-structure.
+# nav:
+#   - ...
 
 # # 1. This method produces the unnecessary "topicA" folder:
 # nav:
@@ -17,6 +17,16 @@ nav:
 #   - ...
 
 
+######################## other
+
+# Example with index.md (must be in the top level)
+nav:
+  - TOPIC A: 
+    - the default page: index.md
+    - ... | topicA/**  # here, I want it to be flattened with: flat -1
+  - ...
+
+
 theme:
   name: material
   features:
@@ -26,4 +36,4 @@ theme:
 plugins:
   - search
   - awesome-pages
-
+  
