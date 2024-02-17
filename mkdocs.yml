@@ -19,11 +19,17 @@ site_name: Docs
 
 ######################## other
 
-# Example with index.md (must be in the top level)
+# # Example with index.md (index.md be in the top level)
+# nav:
+#   - TOPIC A: 
+#     - my index md: index.md
+#     - ... | topicA/**  # here, I want the top folder to be removed with: flat -1
+#   - ...
+
+# 3. Can set the order of topics like this! 🎉
 nav:
-  - TOPIC A: 
-    - the default page: index.md
-    - ... | topicA/**  # here, I want it to be flattened with: flat -1
+  - index.md
+  - ... | topicA/**  # BUT: 1) can't rename to "TOPIC A", 2) can't include 'index.md' inside this topic
   - ...
 
 
