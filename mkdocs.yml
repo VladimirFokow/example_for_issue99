@@ -16,21 +16,25 @@ site_name: Docs
 #     - ... | flat | topicA/**
 #   - ...
 
+# 3. Can set the order of topics like this!
+nav:
+  - my index: index.md
+  - ... | topicA/**
+  - ...
+# BUT then: 
+# - can't rename, e.g. to "TOPIC A"
+# - can't include 'index.md' inside of topic A
+#   (index.md must be in the top level: in docs/)
 
-######################## other
 
-# # Example with index.md (index.md be in the top level)
+###############################################################################
+
+# # Desired example:
 # nav:
 #   - TOPIC A: 
-#     - my index md: index.md
-#     - ... | topicA/**  # here, I want the top folder to be removed with: flat -1
+#     - my index: index.md
+#     - ... | flat -1 | topicA/**
 #   - ...
-
-# 3. Can set the order of topics like this! 🎉
-nav:
-  - index.md
-  - ... | topicA/**  # BUT: 1) can't rename to "TOPIC A", 2) can't include 'index.md' inside this topic
-  - ...
 
 
 theme:
