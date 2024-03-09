@@ -12,5 +12,5 @@ mkdocs serve
 
 - go to localhost:8000/ to see the docs.
 
-- try out different configs in `mkdocs.yml`
+- try out different configs in `mkdocs.yml` (or in `.pages` inside folders)
 
