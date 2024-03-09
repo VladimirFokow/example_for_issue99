@@ -7,24 +7,26 @@ site_name: Docs
 # # 1. This method produces the unnecessary "topicA" folder:
 # nav:
 #   - TOPIC A: 
+#     - welcome: index.md
 #     - ... | topicA/**
 #   - ...
 
 # # 2. This method flattens all sub-folders:
 # nav:
 #   - TOPIC A: 
+#     - welcome: index.md
 #     - ... | flat | topicA/**
 #   - ...
 
-# 3. Can set the order of topics like this!
-nav:
-  - my index: index.md
-  - ... | topicA/**
-  - ...
-# BUT then: 
-# - can't rename, e.g. to "TOPIC A"
-# - can't include 'index.md' inside of topic A
-#   (index.md must be in the top level: in docs/)
+# # 3. Can set the order of topics like this!
+# nav:
+#   - welcome: index.md
+#   - ... | topicA/**
+#   - ...
+# # BUT then: 
+# # - can't rename, e.g. to "TOPIC A"
+# # - can't include 'index.md' inside of topic A
+# #   (index.md must be in the top level: in docs/)
 
 
 ###############################################################################
@@ -32,7 +34,7 @@ nav:
 # # Desired example:
 # nav:
 #   - TOPIC A: 
-#     - my index: index.md
+#     - welcome: index.md
 #     - ... | flat -1 | topicA/**
 #   - ...
 

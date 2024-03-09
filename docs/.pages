@@ -1,0 +1,6 @@
+# example from: https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin/issues/99#issuecomment-1986861196
+nav:
+    - TOPIC A: 
+        - welcome: index.md
+        - topicA  # unnecessary folder. I want the contents of topicA be at the same level as index.md
+    - ...
